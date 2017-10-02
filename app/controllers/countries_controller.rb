@@ -5,11 +5,11 @@ class CountriesController < ApplicationController
   end
 
   def show
-  	id = params[:id].to_i
-    @countries = Country.find id
+    @countries = Country.find(params[:id])
   end
 
   def edit
+  	@countries = Country.find(params[:id])
   end
 
   def create
