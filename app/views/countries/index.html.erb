@@ -1,2 +1,17 @@
-<h1>Countries#index</h1>
-<p>Find me in app/views/countries/index.html.erb</p>
+<h1>Country Index Page</h1>
+
+<a href="countries/new">Add a new Country</a>
+<br>
+
+ 
+
+<% @countries.each do |country| %>
+
+	<h2><%= country.country %></h2>
+	<p>Population: <%= country.population %></p>
+	<p>Language: <%= country.language %></p>
+	<p>Leader: <%= country.leader %></p>
+	<p>Flag: <img src="<%= country.flag %>"></p>
+
+
+<% end %>

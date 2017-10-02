@@ -1,8 +1,12 @@
 class CountriesController < ApplicationController
+
   def index
+  	@countries = Country.all
   end
 
   def show
+  	@countries = Country.find(params[:id])
+
   end
 
   def edit
