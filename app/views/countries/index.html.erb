@@ -12,6 +12,8 @@
 	<p>Language: <%= country.language %></p>
 	<p>Leader: <%= country.leader %></p>
 	<p>Flag: <img src="<%= country.flag %>"></p>
+	<a href="/countries/<%= country.id %>">SHOW PAGE</a>	
+	<a href="/countries/<%= country.id %>/edit">EDIT</a>
 
 
 <% end %>

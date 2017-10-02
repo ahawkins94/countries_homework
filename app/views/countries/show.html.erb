@@ -1,5 +1,10 @@
-<h1>Countries#show</h1>
-<p>Find me in app/views/countries/show.html.erb</p>
 
+<h1>Show Countries</h1>
 
+	<h1><%= @countries.country %></h1>
+	<p>Population: <%= @countries.population %></p>
+	<p>Language: <%= @countries.language %></p>
+	<p>Leader: <%= @countries.leader %></p>
+	<p>Flag: <img src="<%= @countries.flag %>"></p>
 
+	<a href="/countries"><button>HOME PAGE</button></a>
