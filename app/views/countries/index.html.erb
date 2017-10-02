@@ -15,5 +15,11 @@
 	<a href="/countries/<%= country.id %>">SHOW PAGE</a>	
 	<a href="/countries/<%= country.id %>/edit">EDIT</a>
 
+	<form action="/countries/<%= country.id %>" method="POST">
+		<%= token_tag %>
+		<input type="hidden" name="_method" value="DELETE">
+		<input type="submit" value="Delete">
+	</form>
+
 
 <% end %>
