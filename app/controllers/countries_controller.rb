@@ -19,6 +19,16 @@ class CountriesController < ApplicationController
   end
 
   def update
+    @countries = Country.find(params[:id])
+    @countries.country = params[:country]
+    @countries.population = params[:population]   
+    @countries.language = params[:language]   
+    @countries.flag = params[:flag]   
+
+    @countries.save
+
+    redirect_to "/countries"
+
   end
 
   def destroy
