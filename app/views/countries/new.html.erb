@@ -3,16 +3,21 @@
 <form action="/countries" method="POST">
 	<%= token_tag %>
 
-	<label for="country"></label>
+	<label for="country">Country Name: </label>
 	<input type="text" name="country" placeholder="Country Name">
-
-	<label for="population"></label>
+	<br>
+	<br>
+	<label for="population">Population: </label>
 	<input type="integer" name="population" placeholder="Enter Population Number">
+	<br>
+	<br>
 
-	<label for="language"></label>
-	<input type="text" name="language" placeholder="Language">
+	<label for="language">Language: </label>
+	<input type="text" name="language" placeholder="Enter Language">
+	<br>
+	<br>
 
-	<label for="flag"></label>
+	<label for="flag">Flag: </label>
 	<input type="text" name="flag" placeholder="Enter Flag Image URL">
 
 	<input type="submit" value="Save">

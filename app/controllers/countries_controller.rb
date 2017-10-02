@@ -15,8 +15,9 @@ class CountriesController < ApplicationController
   def create
   	new_country = Country.new
   	new_country.country = params[:country]
-  	new_country.population = params[:population]
+  	new_country.population = params[:population]  
   	new_country.language = params[:language]
+    @new_country.leader = params[:leader]
   	new_country.flag = params[:flag]
 
   	new_country.save
@@ -32,6 +33,7 @@ class CountriesController < ApplicationController
     @countries.country = params[:country]
     @countries.population = params[:population]   
     @countries.language = params[:language]   
+    @countries.leader = params[:leader]   
     @countries.flag = params[:flag]   
 
     @countries.save
